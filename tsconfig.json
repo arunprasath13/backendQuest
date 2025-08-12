@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Environment Settings */
+    "module": "commonjs", // easier for backend projects
+    "target": "esnext",
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    /* Module Resolution */
+    "esModuleInterop": true, // allow default imports from CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Output Options */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Module Detection */
+    "moduleDetection": "force",
+    "isolatedModules": false, // avoid issues with type-only imports
+
+    /* JSX (not used for backend but okay to keep) */
+    "jsx": "react-jsx"
+  }
+}
